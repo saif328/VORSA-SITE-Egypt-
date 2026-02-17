@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  font-family: Cairo, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0f172a;
+  color: #fff;
+  text-align: center;
+}
+
+header {
+  padding: 25px;
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+.app-card {
+  background: #111827;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 16px;
+  max-width: 420px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.app-card h2 {
+  color: #38bdf8;
+}
+
+.app-screenshot {
+  width: 90%;
+  max-width: 400px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.download, .btn {
+  display: block;
+  margin: 15px auto;
+  padding: 15px;
+  background: #22c55e;
+  color: #000;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.download:hover, .btn:hover { background: #16a34a; }
+
+.whatsapp { background: #25D366; }
+.telegram { background: #229ED9; }
+
+nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #020617;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.features {
+  text-align: right;
+  padding-left: 0;
+  list-style: none;
+}
+
+.features li {
+  margin: 8px 0;
+}
