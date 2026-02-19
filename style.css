@@ -1,0 +1,124 @@
+/* إعدادات الخط والتصميم العام */
+* {
+  box-sizing: border-box;
+  font-family: 'Cairo', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0f172a; /* اللون الكحلي الغامق للخلفية */
+  color: #fff;
+  text-align: center;
+  padding-bottom: 80px; /* مسافة إضافية لتجنب تداخل القائمة السفلية مع المحتوى */
+}
+
+/* تنسيق الهيدر (رأس الصفحة) */
+header {
+  padding: 30px;
+  background: linear-gradient(135deg, #2563eb, #4f46e5); /* تدرج أزرق احترافي */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+/* الحاوية الرئيسية للتطبيقات - تجعل الكروت بجانب بعضها */
+main {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap; /* للسماح بنزول الكروت لسطر جديد في شاشات الموبايل */
+  justify-content: center; /* توسيط الكروت في منتصف الشاشة */
+  gap: 25px; /* المسافة بين كل كارت وتطبيق */
+}
+
+/* تنسيق كارت التطبيق (الخلفية والظل) */
+.app-card {
+  background: #111827; /* لون أفتح قليلاً من الخلفية لتمييز الكارت */
+  padding: 25px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 350px; /* عرض مناسب جداً لعرض 3 تطبيقات بجانب بعضها */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, border 0.3s ease;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* تأثير عند تمرير الماوس فوق الكارت */
+.app-card:hover {
+  transform: translateY(-10px); /* حركة خفيفة للأعلى */
+  border: 1px solid #38bdf8; /* إضاءة زرقاء خفيفة عند الحواف */
+}
+
+.app-card h2 {
+  color: #38bdf8; /* لون العنوان السماوي */
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+/* تنسيق صور التطبيقات */
+.app-screenshot {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1; /* لضمان أن تكون الأيقونة مربعة ومتناسقة */
+  border-radius: 16px;
+  margin-bottom: 15px;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* تنسيق الأزرار (عرض وتحميل) */
+.btn {
+  display: block;
+  padding: 15px;
+  background: #22c55e; /* اللون الأخضر المميز */
+  color: #000;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #16a34a;
+  transform: scale(1.05); /* تكبير بسيط للزر عند اللمس */
+}
+
+/* القائمة السفلية (Navigation) */
+nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #020617;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+  border-top: 1px solid #1e293b;
+  z-index: 1000;
+}
+
+nav a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* تنسيق خاص لصفحات التحميل الفردية */
+main.app-details {
+  max-width: 600px;
+  margin: 0 auto;
+}
